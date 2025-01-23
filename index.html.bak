@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cuidado é Estilo - Blog</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        header {
+            background-color: #3cb371;
+            color: white;
+            text-align: center;
+            padding: 1em 0;
+        }
+        .post {
+            background-color: white;
+            margin: 20px;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        .post h2 {
+            margin-top: 0;
+        }
+        .content-post {
+            display: none;
+        }
+        footer {
+            background-color: #3cb371;
+            color: white;
+            text-align: center;
+            padding: 1em 0;
+            position: relative;
+        }
+        footer a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+        }
+        .show-post-btn {
+            background-color: #3cb371;
+            color: white;
+            padding: 10px;
+            border: none;
+            cursor: pointer;
+            font-size: 16px;
+            border-radius: 5px;
+        }
+        .show-post-btn:hover {
+            background-color: #2f9e5a;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Cuidado é Estilo - Blog</h1>
+    </header>
+
+    <div class="post" id="post1">
+        <h2>Cuidados com a Pele no Verão</h2>
+        <button class="show-post-btn" onclick="showContent(1)">Mostrar Conteúdo</button>
+        <div class="content-post" id="content-post1">
+            <img src="https://source.unsplash.com/600x400/?skincare" alt="Cuidados com a Pele no Verão">
+            <p>
+                Durante o verão, nossa pele está mais exposta ao sol e aos raios UV. Para mantê-la saudável, é essencial:
+            </p>
+            <ul>
+                <li>Usar protetor solar com fator acima de 30.</li>
+                <li>Hidratar-se constantemente, bebendo muita água.</li>
+                <li>Evitar exposição ao sol entre 10h e 16h.</li>
+                <li>Utilizar chapéus e óculos de sol como proteção adicional.</li>
+            </ul>
+            <p>Mantenha uma rotina de cuidados com a pele e aproveite o verão de forma saudável!</p>
+        </div>
+    </div>
+
+    <div class="post" id="post2">
+        <h2>Benefícios da Hidratação</h2>
+        <button class="show-post-btn" onclick="showContent(2)">Mostrar Conteúdo</button>
+        <div class="content-post" id="content-post2">
+            <img src="https://source.unsplash.com/600x400/?water" alt="Benefícios da Hidratação">
+            <p>
+                Beber água é essencial para a saúde e bem-estar. Alguns dos principais benefícios da hidratação incluem:
+            </p>
+            <ul>
+                <li>Melhora a elasticidade e a aparência da pele.</li>
+                <li>Ajuda na digestão e no funcionamento do organismo.</li>
+                <li>Reduz o risco de fadiga e melhora a concentração.</li>
+                <li>Favorece o transporte de nutrientes essenciais no corpo.</li>
+            </ul>
+            <p>Certifique-se de beber ao menos 2 litros de água por dia para manter-se saudável!</p>
+        </div>
+    </div>
+
+    <div class="post" id="post3">
+        <h2>Alimentação Saudável</h2>
+        <button class="show-post-btn" onclick="showContent(3)">Mostrar Conteúdo</button>
+        <div class="content-post" id="content-post3">
+            <img src="https://source.unsplash.com/600x400/?healthy-food" alt="Alimentação Saudável">
+            <p>
+                Uma alimentação equilibrada é fundamental para o bem-estar do corpo e da mente. Aqui estão algumas dicas:
+            </p>
+            <ul>
+                <li>Inclua vegetais e frutas em todas as refeições.</li>
+                <li>Prefira alimentos integrais ao invés de processados.</li>
+                <li>Evite alimentos ricos em açúcares refinados.</li>
+                <li>Beba bastante água durante o dia.</li>
+            </ul>
+            <p>Com uma alimentação saudável, você garante mais energia e saúde no seu dia a dia.</p>
+        </div>
+    </div>
+
+    <div class="post" id="post4">
+        <h2>Evento de Moda - Paris Fashion Week</h2>
+        <button class="show-post-btn" onclick="showContent(4)">Mostrar Conteúdo</button>
+        <div class="content-post" id="content-post4">
+            <img src="https://source.unsplash.com/600x400/?fashion" alt="Paris Fashion Week">
+            <p>
+                A Paris Fashion Week é um dos eventos mais aguardados do mundo da moda. Este evento reúne os maiores estilistas e marcas internacionais, apresentando as últimas tendências para as próximas temporadas. Em 2025, veremos muitas inovações no estilo urbano, como o uso de tecidos sustentáveis e designs minimalistas. Se você ama moda, este é o evento imperdível!
+            </p>
+        </div>
+    </div>
+
+    <div class="post" id="post5">
+        <h2>Estilo Minimalista</h2>
+        <button class="show-post-btn" onclick="showContent(5)">Mostrar Conteúdo</button>
+        <div class="content-post" id="content-post5">
+            <img src="https://source.unsplash.com/600x400/?minimalist-fashion" alt="Estilo Minimalista">
+            <p>
+                O estilo minimalista é caracterizado por peças de roupa simples, mas elegantes. A chave desse estilo é a qualidade sobre a quantidade. As cores neutras e os cortes clean são perfeitos para quem busca um visual sofisticado sem exageros. Dicas para adotar o minimalismo:
+            </p>
+            <ul>
+                <li>Invista em peças de qualidade, como blusas e calças bem cortadas.</li>
+                <li>Escolha uma paleta de cores neutras (branco, preto, cinza, bege).</li>
+                <li>Use acessórios discretos, mas que adicionem personalidade ao look.</li>
+            </ul>
+            <p>Experimente o estilo minimalista para um look atemporal e versátil!</p>
+        </div>
+    </div>
+
+    <div class="post" id="post6">
+        <h2>Carnaval e Moda</h2>
+        <button class="show-post-btn" onclick="showContent(6)">Mostrar Conteúdo</button>
+        <div class="content-post" id="content-post6">
+            <img src="https://source.unsplash.com/600x400/?carnival-fashion" alt="Carnaval e Moda">
+            <p>
+                O carnaval de 2025 promete trazer muitas cores e brilhos para as ruas. Além das tradicionais fantasias, a moda carnavalesca deste ano aposta em looks mais urbanos e estilosos. Dicas para arrasar no carnaval:
+            </p>
+            <ul>
+                <li>Use roupas leves e frescas, como vestidos e blusas de manga curta.</li>
+                <li>Invista em acessórios coloridos e com brilho, como penas e colares grandes.</li>
+                <li>Não se esqueça do protetor solar, especialmente se você passar muito tempo ao ar livre.</li>
+            </ul>
+            <p>Com essas dicas, você vai se divertir no carnaval sem perder o estilo!</p>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Cuidado é Estilo. Todos os direitos reservados.</p>
+        <a href="#termos">Termos de Uso</a>
+        <a href="#politica">Política de Privacidade</a>
+        <a href="#sobre">Sobre</a>
+        <a href="mailto:duduplay360@gmail.com">Contato</a>
+    </footer>
+
+    <script>
+        function showContent(postId) {
+            var content = document.getElementById('content-post' + postId);
+            if (content.style.display === 'block') {
+                content.style.display = 'none';
+            } else {
+                content.style.display = 'block';
+            }
+        }
+    </script>
+
+</body>
+</html>
